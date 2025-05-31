@@ -5,8 +5,6 @@ using System.Text;
 using AppWave.ECommerce.DataAccess.Data;
 using ECommerceAPI.Domain.Interfaces;
 using AppWave.ECommerce.DataAccess.Repositories;
-using AppWave.ECommerce.Bus.Interfaces;
-using AppWave.ECommerce.Bus.Services;
 using AppWave.ECommerce.Business.Services;
 using AppWave.ECommerce.Business.Interfaces;
 using AppWave.ECommerce.Business.Mappings;

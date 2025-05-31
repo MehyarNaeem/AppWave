@@ -1,5 +1,4 @@
-using AppWave.ECommerce.Bus.DTOs;
-using AppWave.ECommerce.Bus.Interfaces;
+
 using AppWave.ECommerce.Business.DTOs;
 using AppWave.ECommerce.Business.Interfaces;
 using AutoMapper;
@@ -9,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace AppWave.ECommerce.Business.Services
 {
-    public class ProductService : IProductService
+    public class ProductService : IProductService                    
     {
         private readonly IProductRepository _productRepository;
         private readonly IMapper _mapper;
@@ -109,5 +108,7 @@ namespace AppWave.ECommerce.Business.Services
             await _productRepository.DeleteAsync(id);
             return true;
         }
+
+        
     }
 } 

@@ -1,6 +1,6 @@
-using AppWave.ECommerce.Bus.DTOs;
+using AppWave.ECommerce.Business.DTOs;
 
-namespace AppWave.ECommerce.Bus.Interfaces;
+namespace AppWave.ECommerce.Business.Interfaces;
 
 public interface IUserService
 {

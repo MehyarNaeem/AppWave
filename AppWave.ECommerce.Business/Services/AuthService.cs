@@ -1,16 +1,16 @@
-using AppWave.ECommerce.Bus.DTOs;
+using AppWave.ECommerce.Business.DTOs;
 using AutoMapper;
 using Microsoft.Extensions.Configuration;
 using System.Security.Claims;
 using System.Text;
-using AppWave.ECommerce.Bus.Interfaces;
 using ECommerceAPI.Domain.Interfaces;
 using ECommerceAPI.Domain.Entities;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using BCrypt.Net;
+using AppWave.ECommerce.Business.Interfaces;
 
-namespace AppWave.ECommerce.Bus.Services
+namespace AppWave.ECommerce.Business.Services
 {
     public class AuthService : IAuthService
     {

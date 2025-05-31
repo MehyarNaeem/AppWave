@@ -1,4 +1,4 @@
-namespace AppWave.ECommerce.Bus.DTOs
+namespace AppWave.ECommerce.Business.DTOs
 {
     public class ProductDto
     {

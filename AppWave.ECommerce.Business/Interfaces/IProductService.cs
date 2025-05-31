@@ -1,8 +1,8 @@
-using AppWave.ECommerce.Bus.DTOs;
-using AppWave.ECommerce.Bus.Interfaces;
 using AppWave.ECommerce.Business.DTOs;
+using AppWave.ECommerce.Business.Interfaces;
 
-namespace AppWave.ECommerce.Bus.Interfaces;
+
+namespace AppWave.ECommerce.Business.Interfaces;
 
 public interface IProductService
 {
@@ -17,4 +17,5 @@ public interface IProductService
     Task<ProductDto> CreateAsync(CreateProductDto createProductDto);
     Task<ProductDto> UpdateAsync(Guid id, UpdateProductDto updateProductDto);
     Task<bool> DeleteAsync(Guid id);
+
 } 

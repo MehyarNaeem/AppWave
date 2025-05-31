@@ -1,5 +1,5 @@
-using AppWave.ECommerce.Bus.DTOs;
-using AppWave.ECommerce.Bus.Interfaces;
+using AppWave.ECommerce.Business.DTOs;
+using AppWave.ECommerce.Business.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

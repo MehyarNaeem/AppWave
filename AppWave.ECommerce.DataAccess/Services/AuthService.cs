@@ -1,8 +1,8 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using AppWave.ECommerce.Bus.DTOs;
-using AppWave.ECommerce.Bus.Interfaces;
+using AppWave.ECommerce.Business.DTOs;
+using AppWave.ECommerce.Business.Interfaces;
 using ECommerceAPI.Domain.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
