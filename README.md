@@ -10,7 +10,9 @@ A modern e-commerce API built with ASP.NET Core 8.0, featuring JWT authenticatio
 - Entity Framework Core with SQL Server
 - AutoMapper for object mapping
 - Swagger/OpenAPI documentation
-- Weather Forecast API example
+- Invoice Management System
+- Product Management
+- User Management
 
 ## Project Structure
 
@@ -112,6 +114,42 @@ Response:
 }
 ```
 
+### Invoices
+
+#### Get All Invoices
+```http
+GET /api/invoices/getinvoices
+Authorization: Bearer your_jwt_token
+```
+- Regular users can only see their own invoices
+- Admin users can see all invoices
+
+#### Get Invoice by ID
+```http
+GET /api/invoices/getinvoice/{id}
+Authorization: Bearer your_jwt_token
+```
+- Regular users can only access their own invoices
+- Admin users can access any invoice
+
+#### Create Invoice (Admin Only)
+```http
+POST /api/invoices/createinvoice
+Authorization: Bearer your_jwt_token
+Content-Type: application/json
+
+{
+  "userId": "guid",
+  "items": [
+    {
+      "productId": "guid",
+      "quantity": 2,
+      "unitPrice": 99.99
+    }
+  ]
+}
+```
+
 ### Products
 
 #### Get All Products (Paged)
@@ -181,28 +219,12 @@ DELETE /api/products/{id}
 Authorization: Bearer your_jwt_token
 ```
 
-### Weather Forecast
+## Security
 
-#### Get Weather Forecast
-```http
-GET /api/weatherforecast/get
-```
-
-Response:
-```json
-{
-  "2024-03-20": {
-    "temperatureC": 25,
-    "temperatureF": 77,
-    "summary": "Warm"
-  },
-  "2024-03-21": {
-    "temperatureC": 30,
-    "temperatureF": 86,
-    "summary": "Hot"
-  }
-}
-```
+- All endpoints except authentication are protected with JWT authentication
+- Role-based authorization is implemented for admin-only operations
+- User data is isolated - users can only access their own resources
+- Passwords are securely hashed using industry-standard algorithms
 
 ## Error Handling
 
@@ -214,22 +236,6 @@ The API uses standard HTTP status codes:
 - 403: Forbidden
 - 404: Not Found
 - 500: Internal Server Error
-
-Error Response Format:
-```json
-{
-  "statusCode": 400,
-  "message": "Error message here",
-  "details": "Additional error details if available"
-}
-```
-
-## Security
-
-- All endpoints except `/api/auth/register` and `/api/auth/login` require JWT authentication
-- Admin-only endpoints require the "Admin" role
-- Passwords are hashed using BCrypt
-- JWT tokens expire after 7 days
 
 ## Contributing
 
