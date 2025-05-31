@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;
 using FluentAssertions;
-using ECommerceAPI.API.Controllers;
+using AppWave.ECommerce.API.Controllers;
 
 namespace AppWave.ECommerce.Tests.Controllers;
 

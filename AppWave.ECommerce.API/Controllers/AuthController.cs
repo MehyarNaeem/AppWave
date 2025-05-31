@@ -3,7 +3,7 @@ using AppWave.ECommerce.Business.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ECommerceAPI.API.Controllers
+namespace AppWave.ECommerce.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]

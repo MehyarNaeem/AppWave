@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
-namespace ECommerceAPI.API.Controllers
+namespace AppWave.ECommerce.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]
@@ -51,7 +51,6 @@ namespace ECommerceAPI.API.Controllers
             return Ok(invoice);
         }
 
-        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> CreateInvoice([FromBody] CreateInvoiceDto createInvoiceDto)
         {

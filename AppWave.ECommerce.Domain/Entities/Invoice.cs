@@ -1,6 +1,6 @@
-using ECommerceAPI.Domain.Common;
+using AppWave.ECommerce.Domain.Common;
 
-namespace ECommerceAPI.Domain.Entities
+namespace AppWave.ECommerce.Domain.Entities
 {
     public class Invoice : BaseEntity
     {

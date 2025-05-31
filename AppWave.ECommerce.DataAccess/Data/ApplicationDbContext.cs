@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ECommerceAPI.Domain.Entities;
+using AppWave.ECommerce.Domain.Entities;
 
 namespace AppWave.ECommerce.DataAccess.Data
 {

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using AppWave.ECommerce.DataAccess.Data;
-using ECommerceAPI.Domain.Interfaces;
+using AppWave.ECommerce.Domain.Interfaces;
 using AppWave.ECommerce.DataAccess.Repositories;
 using AppWave.ECommerce.Business.Services;
 using AppWave.ECommerce.Business.Interfaces;

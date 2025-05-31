@@ -1,5 +1,5 @@
-using ECommerceAPI.Domain.Entities;
-using ECommerceAPI.Domain.Interfaces;
+using AppWave.ECommerce.Domain.Entities;
+using AppWave.ECommerce.Domain.Interfaces;
 using AppWave.ECommerce.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 

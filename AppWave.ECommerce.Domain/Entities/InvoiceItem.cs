@@ -1,5 +1,5 @@
-﻿using ECommerceAPI.Domain.Common;
-using ECommerceAPI.Domain.Entities;
+﻿using AppWave.ECommerce.Domain.Common;
+using AppWave.ECommerce.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

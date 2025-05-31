@@ -1,5 +1,5 @@
 using AppWave.ECommerce.DataAccess.Data;
-using ECommerceAPI.Domain.Entities;
+using AppWave.ECommerce.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;

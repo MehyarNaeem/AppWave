@@ -3,11 +3,11 @@ using System.Security.Claims;
 using System.Text;
 using AppWave.ECommerce.Business.DTOs;
 using AppWave.ECommerce.Business.Interfaces;
-using ECommerceAPI.Domain.Interfaces;
+using AppWave.ECommerce.Domain.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
-namespace ECommerceAPI.Infrastructure.Services;
+namespace AppWave.ECommerce.Infrastructure.Services;
 
 public class AuthService : IAuthService
 

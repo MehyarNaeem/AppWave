@@ -1,8 +1,8 @@
 using AppWave.ECommerce.Business.DTOs;
 using AppWave.ECommerce.Business.Interfaces;
 using AutoMapper;
-using ECommerceAPI.Domain.Entities;
-using ECommerceAPI.Domain.Interfaces;
+using AppWave.ECommerce.Domain.Entities;
+using AppWave.ECommerce.Domain.Interfaces;
 using Microsoft.Extensions.Configuration;
 
 namespace AppWave.ECommerce.Business.Services;

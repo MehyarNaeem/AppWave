@@ -1,6 +1,6 @@
-using ECommerceAPI.Domain.Entities;
+using AppWave.ECommerce.Domain.Entities;
 
-namespace ECommerceAPI.Domain.Interfaces;
+namespace AppWave.ECommerce.Domain.Interfaces;
 
 public interface IUserRepository : IGenericRepository<User>
 {

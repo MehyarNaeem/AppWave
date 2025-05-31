@@ -1,6 +1,6 @@
-using ECommerceAPI.Domain.Common;
+using AppWave.ECommerce.Domain.Common;
 
-namespace ECommerceAPI.Domain.Interfaces;
+namespace AppWave.ECommerce.Domain.Interfaces;
 
 public interface IGenericRepository<T> where T : BaseEntity
 {

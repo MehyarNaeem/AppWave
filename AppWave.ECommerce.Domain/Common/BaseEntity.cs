@@ -1,4 +1,4 @@
-namespace ECommerceAPI.Domain.Common;
+namespace AppWave.ECommerce.Domain.Common;
 
 public abstract class BaseEntity
 {

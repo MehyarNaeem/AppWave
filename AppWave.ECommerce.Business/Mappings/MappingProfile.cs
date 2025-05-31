@@ -1,6 +1,6 @@
 using AppWave.ECommerce.Business.DTOs;
 using AutoMapper;
-using ECommerceAPI.Domain.Entities;
+using AppWave.ECommerce.Domain.Entities;
 
 namespace AppWave.ECommerce.Business.Mappings;
 
