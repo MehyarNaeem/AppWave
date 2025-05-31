@@ -10,7 +10,7 @@ A modern e-commerce API built with ASP.NET Core 8.0, featuring JWT authenticatio
 - Entity Framework Core with SQL Server
 - AutoMapper for object mapping
 - Swagger/OpenAPI documentation
-- Invoice Management System
+- Invoice Management System with Detailed Line Items
 - Product Management
 - User Management
 
@@ -20,6 +20,11 @@ A modern e-commerce API built with ASP.NET Core 8.0, featuring JWT authenticatio
 - **AppWave.ECommerce.Business**: Business logic layer
 - **AppWave.ECommerce.DataAccess**: Data access layer
 - **AppWave.ECommerce.Domain**: Domain models and interfaces
+  - Entities
+    - InvoiceDetail: Represents individual product entries in an invoice
+    - Product: Product information
+    - Invoice: Invoice header information
+    - User: User account information
 
 ## Prerequisites
 
@@ -123,6 +128,7 @@ Authorization: Bearer your_jwt_token
 ```
 - Regular users can only see their own invoices
 - Admin users can see all invoices
+- Each invoice includes detailed line items with product information
 
 #### Get Invoice by ID
 ```http
@@ -131,6 +137,7 @@ Authorization: Bearer your_jwt_token
 ```
 - Regular users can only access their own invoices
 - Admin users can access any invoice
+- Returns complete invoice details including all line items
 
 #### Create Invoice (Admin Only)
 ```http
@@ -144,7 +151,29 @@ Content-Type: application/json
     {
       "productId": "guid",
       "quantity": 2,
-      "unitPrice": 99.99
+      "price": 99.99
+    }
+  ]
+}
+```
+
+Response:
+```json
+{
+  "id": "guid",
+  "userId": "guid",
+  "createdDate": "2024-03-20T10:00:00Z",
+  "items": [
+    {
+      "id": "guid",
+      "productId": "guid",
+      "price": 99.99,
+      "quantity": 2,
+      "product": {
+        "id": "guid",
+        "name": "Product Name",
+        "description": "Product Description"
+      }
     }
   ]
 }
